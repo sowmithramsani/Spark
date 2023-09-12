@@ -199,3 +199,73 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+/* ################ footer ############ */
+footer {
+
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-details, .social-icons {
+  flex: 1;
+  padding: 10px;
+}
+
+.contact-details h3, .social-icons h3 {
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+
+}
+
+.contact-details p {
+  margin: 0;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+/* Font Awesome Icons Styles (assuming you're using Font Awesome) */
+
+.fa-facebook:before {
+  content: "\f09a"; /* Facebook icon */
+}
+
+.fa-twitter:before {
+  content: "\f099"; /* Twitter icon */
+}
+
+
+
+.fa-instagram:before {
+  content: "\f16d"; /* Instagram icon */
+}
+/* Add more icon styles as needed for other social media platforms */
+.foot{
+margin-top: 30px;
+}  
+

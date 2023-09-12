@@ -95,6 +95,21 @@ nav{
     color: #fff;
     font-size: 12px;
 }
+/* .login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.login-box .user-box input:not(:placeholder-shown) ~ label {
+    top: -20px; /* Adjust this value to the desired fixed position */
+    /* left: 0px; Adjust this value to the desired fixed position */
+    /* color: #fff; */
+    /* font-size: 12px; */
+/* } */ 
+/* .login-box .user-box label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    /* font-size: 12px; */
+/* } */ 
+
 .check{
     font-size: 16px;
     color: #fff;
