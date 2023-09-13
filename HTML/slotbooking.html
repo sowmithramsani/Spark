@@ -15,16 +15,8 @@
   <section class="pre-hm">
   <nav class="tumu">
     <div class="LOGO">
-      <i class="fa-sharp fa-solid fa-p fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-e fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-r fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-f fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-i fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-c fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-i fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-e fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-n fa-beat"></i>
-      <i class="fa-sharp fa-solid fa-t fa-beat"></i>
+      <i class="fa-sharp fa-solid fa-p "></i>
+      
   </div>
     <div class="navigation">  
         <ul>
@@ -215,17 +207,17 @@ document.getElementById("slots").style.display="block"; //form submission
   function showAlert() {
             alert('Slot Booked Successfully'); // Display an alert with the message
         }
-//     // JavaScript to handle seat selection
-//     const seatButtons = document.querySelectorAll('.slotsize1');
+    // JavaScript to handle seat selection
+    const seatButtons = document.querySelectorAll('.slotsize1');
 
-//     seatButtons.forEach((button) => {
-//     button.addEventListener('click', () => {
-//     if (!button.classList.contains('blocked')) {
-//         // Toggle the 'selected' class if the seat is not blocked
-//         button.classList.toggle('selected');
-//     }
-// });
-// });
+    seatButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+    if (!button.classList.contains('blocked')) {
+        // Toggle the 'selected' class if the seat is not blocked
+        button.classList.toggle('selected');
+    }
+});
+});
     
 </script>
  
