@@ -72,11 +72,11 @@
         </div>   
            
     <div class="row row-2">     
-            <div class="col-2"><button class="slotsize1"><b>6</b></button></div>
-            <div class="col-2"><button class="slotsize1">7</button></div>
-            <div class="col-2"><button class="slotsize1">8</button></div>
-            <div class="col-2"><button class="slotsize1">9</button></div>
-            <div class="col-2"><button class="slotsize1">10</button></div>
+            <div class="col-2"><button class="slotsize1" onclick="selectSeat(this)"><b>6</b></button></div>
+            <div class="col-2"><button class="slotsize1" onclick="selectSeat(this)">7</button></div>
+            <div class="col-2"><button class="slotsize1" onclick="selectSeat(this)">8</button></div>
+            <div class="col-2"><button class="slotsize1" onclick="selectSeat(this)">9</button></div>
+            <div class="col-2"><button class="slotsize1" onclick="selectSeat(this)">10</button></div>
     </div>
     
     
@@ -161,6 +161,17 @@
     } 
 </script> -->
 <script>
+  let selectedSeat = null;
+  function selectSeat(slotsize1) {
+    if (selectedSeat) {
+          // Deselect the previously selected seat
+          selectedSeat.classList.remove('selected1');
+    }
+
+      // Select the clicked seat
+    seat.classList.add('selected1');
+    selectedSeat = slotsize1;
+}
   function validation() {
 
 var date = document.getElementById("datemonth").value;
@@ -204,17 +215,17 @@ document.getElementById("slots").style.display="block"; //form submission
   function showAlert() {
             alert('Slot Booked Successfully'); // Display an alert with the message
         }
-    // JavaScript to handle seat selection
-    const seatButtons = document.querySelectorAll('.slotsize1');
+//     // JavaScript to handle seat selection
+//     const seatButtons = document.querySelectorAll('.slotsize1');
 
-    seatButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-    if (!button.classList.contains('blocked')) {
-        // Toggle the 'selected' class if the seat is not blocked
-        button.classList.toggle('selected');
-    }
-});
-});
+//     seatButtons.forEach((button) => {
+//     button.addEventListener('click', () => {
+//     if (!button.classList.contains('blocked')) {
+//         // Toggle the 'selected' class if the seat is not blocked
+//         button.classList.toggle('selected');
+//     }
+// });
+// });
     
 </script>
  

@@ -171,7 +171,7 @@ margin-top: 40px;
   padding: 10px;
   border: 2px solid black;
   padding-top: 10px;
-  background-color: green;  /*slected seat change colour */
+  /* background-color: green;  slected seat change colour */
 
 }
 
@@ -193,7 +193,12 @@ margin-top: 40px;
   font-weight:bold;
 } */
 /* Styling for selected seats */
+.selected1{
+  background-color: green; /* Change this to your desired highlight color */
+  color: #ffffff; /* Text color for selected seat */
+  font-weight: bold;
 
+}
 .slotsize1.selected {
   background-color: green; /* Change this to your desired highlight color */
   color: #ffffff; /* Text color for selected seat */
@@ -316,6 +321,7 @@ footer {
 .dateinput{
     border: 2px solid black;
     margin-bottom: 7px;
+    height: 10px;
 }
 .col-3, .col-2, .col-1 {
     flex-basis: auto; /* Allow columns to expand to their content width */
